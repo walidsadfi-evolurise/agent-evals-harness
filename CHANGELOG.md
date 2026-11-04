@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Fix: latencies under a millisecond were printed as `0.0 ms`; now `<1 ms`.
+
 ## 0.1.0 — 2026-11-04
 
 - YAML suites with dotted-path checks (equals, contains, regex, one_of, min/max, length, exists, json_schema, tools_called/not_called).

@@ -9,6 +9,9 @@ from agentevals.models import RunResult
 
 
 def format_ms(v: float) -> str:
+    """Human latency: '<1' for in-process targets, one decimal under 10 ms, whole ms above."""
+    if v < 1:
+        return "<1"
     return f"{v:.1f}" if v < 10 else f"{v:.0f}"
 
 

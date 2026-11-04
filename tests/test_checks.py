@@ -54,3 +54,12 @@ def test_json_schema() -> None:
     }
     fails = run_check(Check(path="$", json_schema=schema), OUT)
     assert len(fails) == 2 and all(f.startswith("$: schema") for f in fails)
+
+
+def test_format_ms_is_readable_at_every_scale() -> None:
+    from agentevals.report import format_ms
+
+    assert format_ms(0.04) == "<1"
+    assert format_ms(0.99) == "<1"
+    assert format_ms(3.456) == "3.5"
+    assert format_ms(812.4) == "812"
