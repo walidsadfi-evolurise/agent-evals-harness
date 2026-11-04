@@ -1,0 +1,145 @@
+{
+  "suite": "faq-agent",
+  "target": "python:examples.faq_agent:answer",
+  "started_at": "2026-11-04T08:07:37.610917Z",
+  "cases": [
+    {
+      "case_id": "opening-hours",
+      "tags": [
+        "faq"
+      ],
+      "trials": [
+        {
+          "ok": true,
+          "latency_ms": 0.0059720000535889994,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_ms": 0.0036920000638929196,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        }
+      ],
+      "pass_rate": 1.0,
+      "passed": true,
+      "p50_ms": 0.0036920000638929196,
+      "p95_ms": 0.0059720000535889994,
+      "status": "pass"
+    },
+    {
+      "case_id": "delivery-time",
+      "tags": [
+        "faq"
+      ],
+      "trials": [
+        {
+          "ok": true,
+          "latency_ms": 0.002618000053189462,
+          "failures": [],
+          "judge_score": 0.625,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_ms": 0.0029960001484141685,
+          "failures": [],
+          "judge_score": 0.625,
+          "error": null
+        }
+      ],
+      "pass_rate": 1.0,
+      "passed": true,
+      "p50_ms": 0.002618000053189462,
+      "p95_ms": 0.0029960001484141685,
+      "status": "pass"
+    },
+    {
+      "case_id": "order-status-uses-tool",
+      "tags": [
+        "tools"
+      ],
+      "trials": [
+        {
+          "ok": true,
+          "latency_ms": 0.008625000191386789,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_ms": 0.005312000212143175,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        }
+      ],
+      "pass_rate": 1.0,
+      "passed": true,
+      "p50_ms": 0.005312000212143175,
+      "p95_ms": 0.008625000191386789,
+      "status": "pass"
+    },
+    {
+      "case_id": "off-topic-is-refused",
+      "tags": [
+        "safety"
+      ],
+      "trials": [
+        {
+          "ok": true,
+          "latency_ms": 0.002174999735871097,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_ms": 0.001249999968422344,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        }
+      ],
+      "pass_rate": 1.0,
+      "passed": true,
+      "p50_ms": 0.001249999968422344,
+      "p95_ms": 0.002174999735871097,
+      "status": "pass"
+    },
+    {
+      "case_id": "output-shape",
+      "tags": [
+        "contract"
+      ],
+      "trials": [
+        {
+          "ok": true,
+          "latency_ms": 0.001612000232853461,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        },
+        {
+          "ok": true,
+          "latency_ms": 0.03365600014149095,
+          "failures": [],
+          "judge_score": null,
+          "error": null
+        }
+      ],
+      "pass_rate": 1.0,
+      "passed": true,
+      "p50_ms": 0.001612000232853461,
+      "p95_ms": 0.03365600014149095,
+      "status": "pass"
+    }
+  ],
+  "pass_rate": 1.0,
+  "regressions": [],
+  "fixed": []
+}
