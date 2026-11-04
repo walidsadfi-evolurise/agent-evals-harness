@@ -28,7 +28,7 @@ jobs:
       - run: pytest -q
       - name: The harness evaluates its own demo agent
         run: agent-evals run examples/faq_suite.yaml --baseline evals/baseline.json --min-pass-rate 1.0 --junit evals/junit.xml --report evals/report.md
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: matrix.python == '3.12'
         with:
           name: eval-report
